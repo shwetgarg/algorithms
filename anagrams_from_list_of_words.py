@@ -1,3 +1,5 @@
+'''Given two string str and pat. Find minimum window in str which contains all characters from string pat.'''
+
 from collections import defaultdict
 import sys
 
