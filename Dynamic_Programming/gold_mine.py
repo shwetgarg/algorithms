@@ -1,4 +1,8 @@
-'''Given a gold mine of n*m dimension. Each field in this mine contains an integer which is amount of gold in tons. Initially miner is in first column but could be at any row i. He can move only (right ->, right up /, right down \). Find out maximum amount of gold he can collect and path followed by him.'''
+''' Given a gold mine of n*m dimensions. 
+Each field in this mine contains an integer which is amount of gold in tons. 
+Initially miner is in first column but could be at any row i. 
+He can move only (right ->, right up /, right down \). 
+Find out maximum amount of gold he can collect and path followed by him.'''
 
 import collections
 import functools
