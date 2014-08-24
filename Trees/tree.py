@@ -16,11 +16,41 @@ class Tree:
         if self.r is not None:
             self.r.print_inorder_tree()
             
+    def get_inorder_tree(self):  
+        if not self:
+            return
+                   
+        if self.l:
+            for node in self.l.get_inorder_tree():
+                yield node
+        yield self
+        if self.r:	
+            for node in self.r.get_inorder_tree():
+                yield node
+        
     def copy_tree(self):          
         if self is None:
             return
             
         left = self.l.copy_tree() if (self.l is not None) else None
-        right = self.r.copy_tree() if (self.r is not None) else None
-        
+        right = self.r.copy_tree() if (self.r is not None) else None	
         return Tree(self.v, left, right)
+        
+    def convert_to_doubly_ll(self):
+        prev = None
+    
+        for node in self.get_inorder_tree():
+            node.l = prev
+            if prev is None:
+                head = node
+            else:
+                prev.r = node
+            prev = node
+        return head
+    
+    def print_doubly_ll(self):
+        print self.v
+        if self.r is not None:
+            self.r.print_doubly_ll()
+    
+    
