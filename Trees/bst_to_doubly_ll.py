@@ -4,7 +4,7 @@ class BstToDoublyLinkedList(Tree):
     def convert_to_doubly_ll(self):
         prev = None
 
-        for node in self.get_inorder_tree():
+        for node in self.get_inorder_traversal():
             node.l = prev
             if prev is None:
                 head = node

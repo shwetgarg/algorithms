@@ -37,12 +37,12 @@ def main():
 
     new_tree = SuperimposableTree.get_superimposable_tree(b1, b2)
     print ".....Tree 1....."
-    b1.print_inorder_tree()
+    b1.print_inorder_traversal()
     print ".....Tree 2....."
-    b2.print_inorder_tree()	
+    b2.print_inorder_traversal()	
     print "....Superimposed Tree...."
     if new_tree != "Not Superimposable":
-        new_tree.print_inorder_tree()
+        new_tree.print_inorder_traversal()
     else:
         print "error"
         
@@ -55,12 +55,12 @@ def main():
 
     new_tree = SuperimposableTree.get_superimposable_tree(b1, b2)
     print ".....Tree 1....."
-    b1.print_inorder_tree()
+    b1.print_inorder_traversal()
     print ".....Tree 2....."
-    b2.print_inorder_tree()	
+    b2.print_inorder_traversal()	
     if new_tree != "error":
         print "....Superimposed Tree...."
-        new_tree.print_inorder_tree()
+        new_tree.print_inorder_traversal()
     else:
         print "Not Superimposable Tree"
 
