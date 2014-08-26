@@ -35,22 +35,4 @@ class Tree:
         left = self.l.copy_tree() if (self.l is not None) else None
         right = self.r.copy_tree() if (self.r is not None) else None	
         return Tree(self.v, left, right)
-        
-    def convert_to_doubly_ll(self):
-        prev = None
-    
-        for node in self.get_inorder_tree():
-            node.l = prev
-            if prev is None:
-                head = node
-            else:
-                prev.r = node
-            prev = node
-        return head
-    
-    def print_doubly_ll(self):
-        print self.v
-        if self.r is not None:
-            self.r.print_doubly_ll()
-    
     
