@@ -38,8 +38,6 @@ def get_flow_directions(matrix, row, col):
     return flow_direction_matrix, sink	
     
 def get_basin_size(matrix, i, j, row, col):
-    if matrix[i][j] == "V":
-        return 0
     up = down = left = right = 0	
     if (i-1 >= 0) and (matrix[i-1][j] == "D"): 
         up = get_basin_size(matrix, i-1, j, row, col)
