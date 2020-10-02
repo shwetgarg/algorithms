@@ -19,4 +19,4 @@ Here is the complete list ::
 
 7. [Trees](https://github.com/shwetgarg/algorithms/tree/master/Trees)
 
-8. [LISTS](https://github.com/harrypotter0/algorithms-in-python/tree/master/lists)
+8. [LISTS](https://github.com/shwetgarg/algorithms/tree/master/Lists)
